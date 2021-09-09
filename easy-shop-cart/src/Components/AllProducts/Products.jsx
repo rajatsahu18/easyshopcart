@@ -34,9 +34,6 @@ const Products = () => {
                     </Link>
                 ))}
             </div>
-            <Electronics/>
-            <Clothes/>
-            <Accessories/>
         </>
     )
 }
