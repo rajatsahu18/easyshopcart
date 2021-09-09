@@ -1,0 +1,43 @@
+.productsLink {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #364B58;
+    background-color: #364B58;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+.clothesLink {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #364B58;
+    background-color: #364B58;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+.accessoriesLink {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #364B58;
+    background-color: #364B58;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+.electronicsLink {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #364B58;
+    background-color: #364B58;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20%;
+}

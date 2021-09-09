@@ -1,0 +1,30 @@
+.emailInput {
+    padding: 5px;
+    margin-left: 40%;
+}
+
+.emailInput input {
+    margin-left: 4%;
+    padding: 3px;
+}
+
+.passwordInput {
+    padding: 5px;
+    margin-left: 40%;
+}
+
+.passwordInput input {
+    margin-left: 1%;
+    padding: 3px;
+}
+
+.submit {
+    padding: 5px;
+    border: 1px solid #8a98a1;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: #364B58;
+    margin-left: 46%;
+}
