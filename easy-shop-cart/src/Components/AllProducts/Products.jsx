@@ -1,38 +1,17 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import styles from "../styles/Products.module.css"
-import { Accessories } from './Accessories'
-import { Clothes } from './Clothes'
-import { ClothesCard } from './ClothesCard'
-import { Electronics } from './Electronics'
-
-const links = [
-    {
-        to: "/accessories",
-        title: "Accessories",
-        exact: true
-    },
-    {
-        to: "/clothes",
-        title: "Clothes",
-        exact: true
-    },
-    {
-        to: "/electronics",
-        title: "Electronics" ,
-        exact: true
-    },
-]
+import accessoriesButton from "../../images/accessoriesButon.jpg"
+import clothesButton from "../../images/clothesButton.jpg"
+import electronicButton from "../../images/electronicsButton.jpeg"
 
 const Products = () => {
     return (
         <>
             <div>
-                {links.map(({to, title, exact}) => (
-                    <Link to = {to} key = {to} className = {styles.productsLink} >
-                        {title}
-                    </Link>
-                ))}
+                <Link className = {styles.productsLink} to = "/accessories" > <img src = {accessoriesButton} alt = "accessories" /> </Link>
+                <Link className = {styles.productsLink} to = "/clothes" ><img src = {clothesButton} alt = "products" /></Link>
+                <Link className = {styles.electronicsLink} to = "/electronics" ><img src = {electronicButton} alt = "electronics" /></Link>
             </div>
         </>
     )

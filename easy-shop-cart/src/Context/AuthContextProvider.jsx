@@ -25,7 +25,11 @@ export const AuthContextProvider = ({children}) => {
         setIsAuth(true)
     }
 
-    const value = {isAuth, loginSuccess, cartCount, setCartCount, cartData, setCartData, getCartData}
+    const logoutSuccess = () => {
+        setIsAuth(false)
+    }
+    
+    const value = {isAuth, loginSuccess, logoutSuccess, cartCount, setCartCount, cartData, setCartData, getCartData}
 
     return (
         <AuthContext.Provider value = {value}>

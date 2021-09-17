@@ -1,15 +1,14 @@
 import React from 'react'
-import { Accessories } from '../Components/AllProducts/Accessories'
-import { Clothes } from '../Components/AllProducts/Clothes'
-import { Electronics } from '../Components/AllProducts/Electronics'
 import styles from "../Components/styles/Contribute.module.css"
+import { Carouel } from './Carouel'
+import {HomeCardsCarousel} from "./HomeCardsCarousel"
 
 const Home = () => {
     return (
         <div className = {styles.home}>
-            <Clothes/>
-            <Accessories/>
-            <Electronics/>
+            <Carouel/>
+            <div></div>
+            <HomeCardsCarousel/>
         </div>
     )
 }

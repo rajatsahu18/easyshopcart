@@ -2,6 +2,10 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { LoadingIndicator } from '../LoadingIndicator'
 import { ClothesCard } from './ClothesCard'
+import clothes from "../../images/clothes.jpg"
+
+import styles from "../styles/Clothes.module.css"
+import { BackToProduct } from '../../Routes/BackToProduct'
 
 const Clothes = () => {
 
@@ -33,9 +37,17 @@ const Clothes = () => {
         <div>something went wrong</div>
     ) : (
         <div>
-            {data.map((item) => (
-                <ClothesCard {...item} key = {item.id} />
-            ))}
+            <div className = {styles.banner}>
+                <img src={clothes} alt="clothes" />
+            </div>
+            <div>
+                <BackToProduct/>
+            </div>
+            <div>
+                {data.map((item) => (
+                    <ClothesCard {...item} key = {item.id} />
+                ))}
+            </div>
             
         </div>
     )

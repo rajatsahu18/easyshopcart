@@ -46,17 +46,17 @@ function Signin() {
   };
 
   if (isAuth) {
-    return <Redirect to="/clothes" push />;
+    return <Redirect to="/products" push />;
   }
 
   return isLoading ? (
     <LoadingIndicator/>
   ) : (
     <div className = {styles.formContainer}>
+      
+      <h1>Sign In</h1>
       <form onSubmit={handleSubmit} className = {styles.form}>
           <div className = {styles.emailInput}>
-            <label>
-            Email
             <input
                 type="text"
                 placeholder="Email"
@@ -64,19 +64,15 @@ function Signin() {
                 value={email}
                 onChange={hanldeChange}
             />
-            </label>
           </div>
           <div className = {styles.passwordInput}>
-            <label>
-            Password
             <input
-                type="text"
+                type="password"
                 placeholder="Password"
                 name="password"
                 value={password}
                 onChange={hanldeChange}
             />
-            </label>
           </div>
          <div>
             <input type="submit" value="SUBMIT" className = {styles.submit} />

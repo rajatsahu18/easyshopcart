@@ -3,6 +3,7 @@ import Axios from "axios"
 import styles from "../Components/styles/CartCard.module.css"
 import { useHistory } from "react-router-dom"
 
+
 const CartCard = ( {product_name, img, price,id, rating} ) => {
 
     const [productCount, setProductCount] = useState(1)
@@ -29,7 +30,6 @@ const CartCard = ( {product_name, img, price,id, rating} ) => {
         alert(`Thank you for placing your order`)
         setTimeout( function() {
             history.push('/')
-            removeProduct(id)
         }, 2000)
     }
 

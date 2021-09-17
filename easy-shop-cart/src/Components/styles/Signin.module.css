@@ -1,21 +1,23 @@
-.emailInput {
-    padding: 5px;
-    margin-left: 40%;
+.formContainer > h1 {
+    text-align: center;
+    font-size: 3vmax;
+    color: #364B58;
 }
 
 .emailInput input {
-    margin-left: 4%;
-    padding: 3px;
-}
-
-.passwordInput {
-    padding: 5px;
-    margin-left: 40%;
+    margin: 0 0 2% 39%;
+    padding: 1%;
+    width: 20%;
+    font-size: 20px;
+    outline: none;
 }
 
 .passwordInput input {
-    margin-left: 1%;
-    padding: 3px;
+    margin: 0 0 2% 39%;
+    padding: 1%;
+    width: 20%;
+    font-size: 20px;
+    outline: none;
 }
 
 .submit {
@@ -26,5 +28,7 @@
     color: white;
     cursor: pointer;
     background-color: #364B58;
-    margin-left: 46%;
+    margin-left: 41%;
+    padding: 1%;
+    width: 18%;
 }
